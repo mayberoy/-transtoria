@@ -1,0 +1,143 @@
+        @font-face {
+            font-family: 'Segoe-UI-SemiBold';
+            src: url('fonts/segoe-ui-semibold.eot');
+            src: url('fonts/segoe-ui-semibold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-semibold.woff') format('woff'), url('fonts/segoe-ui-semibold.ttf') format('truetype'), url('fonts/segoe-ui-semibold.svg#Segoe-UI-SemiBold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Segoe-UI';
+            src: url('fonts/segoe-ui.eot');
+            src: url('fonts/segoe-ui.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui.woff') format('woff'), url('fonts/segoe-ui.ttf') format('truetype'), url('fonts/segoe-ui.svg#Segoe-UI') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Segoe-UI-Bold';
+            src: url('fonts/segoe-ui-bold.eot');
+            src: url('fonts/segoe-ui-bold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-bold.woff') format('woff'), url('fonts/segoe-ui-bold.ttf') format('truetype'), url('fonts/segoe-ui-bold.svg#Segoe-UI-Bold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'dfds-bold';
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: RGBA(234, 237, 238, 1.00)
+        }
+
+        header {
+            width: 100%;
+            background: white;
+            display: flex;
+        }
+
+        h1 {
+            font-family: "dfds-bold";
+            font-size: 2em;
+        }
+
+        h2 {
+            font-family: "dfds-bold";
+            font-size: 1.2em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        h4 {
+            font-family: "dfds-bold";
+            font-size: 1.1em;
+        }
+
+        p {
+            font-family: "SegoeUi";
+            font-size: 1em;
+        }
+
+        article {
+            background: white;
+            box-shadow: 0em 0.1em .01em grey;
+            padding: 0em;
+            margin: .2em
+        }
+
+        a {
+            text-decoration: none;
+            color: #005184;
+        }
+
+        article > h2 {
+            border-bottom: solid 1px #005184;
+            width: 100%;
+            padding: .5em;
+            color: #005184;
+        }
+
+        p + footer {
+            background-color: #68BD45;
+            padding: 0.4em;
+            font-family: "SegoeUi";
+            font-weight: 700;
+            color: white;
+            height: 10em;
+            width: 5em;
+            padding: 1em;
+            position: inherit;
+        }
+
+        header > h1 {
+            margin: auto;
+        }
+
+        .flex-container {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+        }
+
+        .verderlezen {
+            width: 33%;
+            min-width: 375px;
+        }
+
+        .mainstories {
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 1em;
+        }
+
+        @media screen and (max-width: 480px) {
+            body {}
+        }
+
+        .views {
+            width: 3em;
+        }
+
+        .comment {
+            width: 2.3em;
+        }
+
+        .likes {
+            width: 2.3em;
+        }
+
+        .search {
+            height: 3em;
+            margin-left: 1em;
+        }
+
+        .login {
+            height: 3em;
+            margin-left: 1em;
+        }

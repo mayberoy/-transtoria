@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header>
-        <h1><a href="index.html">LOGO</a></h1>
-        <img src="" alt="search">
-        <a href="aanmelden.html">Aanmelden</a>
+        <h1><a href="index.html">DFDS</a></h1>
+        <img class="search" src="img/search.png" alt="search">
+        <a href="aanmelden.html"><img class="login" src="img/login.png" alt="login"></a>
     </header>
 
-    <section>
-        <h1>continue reading</h1>
-        <article>
-            <h2><a href="verhaaltje.html">Titel</a><progress value="80" max="100"></progress></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus, cum consequuntur deleniti nesciunt dolores ea magni quam dolore esse commodi nam beatae voluptatibus suscipit hic voluptates fugit modi accusamus.</p>
+    <h1>VERDER LEZEN</h1>
+
+    <section class="flex-container">
+        <article class="verderlezen">
+            <h2><a href="verhaaltje.html">LETTERLIJK</a></h2>
+            <footer>Posted on 1 april 2011 by Molovich</footer>
+            <p>Rond 12.00 uur stap ik uit de bus, die er letterlijk acht uur over heeft gedaan. Op het plein van Amsterdam Centraal. De regen geselt letterlijk mijn gezicht. Ik duw het wagentje voort waarin mijn zoontje ligt te slapen. De mensen die langs lopen, gedachteloos, ik zou ze letterlijk [...]</p>
+            <footer><img class="likes" src="img/like.png" alt="like">23<img class="comment" src="img/message.png" alt="comment"> 6<img class="views" src="img/eycon.png" alt="views">78</footer>
         </article>
-        <article>
-            <h2><a href="verhaaltje.html">Titel</a><progress value="30" max="100"></progress></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quod laborum cupiditate debitis vero molestiae esse totam molestias pariatur soluta, dignissimos, ex velit doloribus earum voluptates sunt nam sint! Aliquam!</p>
+        <article class="verderlezen">
+            <h2><a href="verhaaltje.html">RUUD LUBBERS</a></h2>
+            <footer>Posted on 8 april 2011 by Molovich</footer>
+            <p>I step out of the bus while I push my son forward in his little babywagon. My son sleeps like an ox. It’s raining pipes of steel and I’m going to the Public Library to find Stijloefeningen from the French writer Raymond Queneau. The square around Central Station is a mess. There’s a building anger […]</p>
+            <footer><img class="likes" src="img/like.png" alt="like">98<img class="comment" src="img/message.png" alt="comment"> 12<img class="views" src="img/eycon.png" alt="views">223</footer>
         </article>
-        <article>
-            <h2><a href="verhaaltje.html">Titel</a><progress value="10" max="100"></progress></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni magnam doloremque, consequuntur aliquid blanditiis voluptatem omnis, cum fugit. Error dignissimos, in tempore exercitationem quos reprehenderit provident beatae quis eos hic.</p>
+        <article class="verderlezen">
+            <h2><a href="verhaaltje.html">BIERTJE?</a></h2>
+            <footer>Posted on 4 april 2011 by Molovich</footer>
+            <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’ – ‘Goed zo. Lekker wandelweer?’ […]</p>
+            <footer><img class="likes" src="img/like.png" alt="like">22<img class="comment" src="img/message.png" alt="comment"> 32<img class="views" src="img/eycon.png" alt="views">30</footer>
         </article>
     </section>
     <section>
@@ -34,21 +42,29 @@
   <option value="populairste">Populairste</option>
   <option value="langste">Langste</option>
   <option value="meest besproken">Meest besproken</option>
-</select> verhalen eerst</h1>
-        <article>
-            <h2><a href="verhaaltje.html">Titel</a> 9/9/2016</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus, cum consequuntur deleniti nesciunt dolores ea magni quam dolore esse commodi nam beatae voluptatibus suscipit hic voluptates fugit modi accusamus.</p>
+</select> VERHALEN EERST</h1>
+        <article class="mainstories">
+            <h2><a href="verhaaltje.html">NICHTERIG</a></h2>
+            <footer>Posted on 13 april 2011 by Molovich</footer>
+            <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me daar toch het apenlazarus zeg! Werkelijk heel de omgeving rond Centraal Station is open gebroken! Ik zweer het je, één grote bouwput. En dan miezerde het ook nog een beetje, dus kun je nagaan. Dat werd me toch een kliederboel! Maar goed, ik moest nu eenmaal naar de biep. Ik wilde Stijloefeningen van Raymundo Queneau lezen, de schat.</p>
+            <footer><img class="likes" src="img/like.png" alt="like">22<img class="comment" src="img/message.png" alt="comment"> 32<img class="views" src="img/eycon.png" alt="views">30</footer>
         </article>
-        <article>
-            <h2><a href="verhaaltje.html">Titel</a> 8/9/2016</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quod laborum cupiditate debitis vero molestiae esse totam molestias pariatur soluta, dignissimos, ex velit doloribus earum voluptates sunt nam sint! Aliquam!</p>
+        <article class="mainstories">
+            <h2><a href="verhaaltje.html">KATER</a></h2>
+            <footer>Posted on 12 april 2011 by Molovich</footer>
+            <p>Ik had vandaag bus 21 willen nemen naar het Centraal Station om naar de Openbare Bibliotheek te gaan en Stijloefeningen van Raymond Queneau te lenen, een boekwerk waar ik al weken naar op zoek ben. Maar ik heb gisteren iets te veel biertjes naar binnen gegooid en ben nu zo goed als nergens toe in staat. Het wordt, vrees ik, een dagje op de bank hangen. Hopelijk is mijn zoontje niet in een al te zeurende bui. Gejengel resoneert zo vervelend in een houten harses. Misschien hijs ik mezelf nog even aan mijn eigen haren op uit het moeras van de kater om in de babywinkel van het Bos en Lommerplein een paar schoenen voor m’n zoontje te kopen. Dat moet nog wel lukken, het is hier om de hoek. Meer hoeft de wereld van mij vandaag niet te verwachten.</p>
+            <footer><img class="likes" src="img/like.png" alt="like">22<img class="comment" src="img/message.png" alt="comment"> 32<img class="views" src="img/eycon.png" alt="views">30</footer>
         </article>
-        <article>
-            <h2><a href="verhaaltje.html">Titel</a> 7/9/2016</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni magnam doloremque, consequuntur aliquid blanditiis voluptatem omnis, cum fugit. Error dignissimos, in tempore exercitationem quos reprehenderit provident beatae quis eos hic.</p>
+        <article class="mainstories">
+            <h2><a href="verhaaltje.html">MOP</a></h2>
+            <footer>Posted on 11 april 2011 by Molovich</footer>
+            <p>Ken je die mop van die man die met bus 21 naar het Centraal Station van Amsterdam ging, langs de diverse bouwputten liep richting de Openbare Bibliotheek om daar Stijloefeningen van Raymond Queneau te kunnen lenen, een boek waar hij al weken naar op zoek was, maar dat hij voor binnenkomst tegengehouden werd door een vrouw die hem in het Engels met een Frans accent vroeg of dit het postkantoor was en dat die man haar dan vertelde dat ze naar de Raadhuisstraat moest gaan, omdat het postkantoor hier al jaren niet meer gesitueerd was, en dat de vrouw</p>
+            <footer><img class="likes" src="img/like.png" alt="like">22<img class="comment" src="img/message.png" alt="comment"> 32<img class="views" src="img/eycon.png" alt="views">30</footer>
         </article>
     </section>
-    <footer>contact enshizzle</footer>
+    <footer>
+        <h4>GEMAAKT DOOR ROY</h4>
+    </footer>
 </body>
 
 </html>
