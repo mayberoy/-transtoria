@@ -3,57 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>aanmelden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header>
-        <h1><a href="index.html">DFDS</a></h1>
-        <img class="search" src="img/search.png" alt="search">
+        <a href="index.html"><img class="logo" src="img/Logo_dfds.png" alt="logo"></a>
+
         <a href="aanmelden.html"><img class="login" src="img/login.png" alt="login"></a>
     </header>
-    <section>
-        <form>
-            <fieldset>
 
-                <legend>Contactgegevens</legend>
+    <main>
+        <section class="loginpage">
+            <h1>INLOGGEN</h1>
+            <form class="loginform">
 
-                <label for="name">Naam *</label>
-                <input type="text" id="name" required>
-                <br/>
+                <label class="aanmeldform" for="email">E-mailadres</label>
+                <input class="username" type="email" id="email" required>
 
-                <label for="email">Email *</label>
-                <input type="email" id="email" required>
-                <br/>
+                <label class="aanmeldform" for="password">Wachtwoord</label>
+                <input class="ww" type="password" id="password" required>
 
-                <label for="straat">Straatnaam</label>
-                <input type="text" id="straat" placeholder="Zonder huis nummer">
-                <br/>
+                <div class="buttonenww">
+                    <input class="loginbtn" type="submit" value="Log in">
+                    <a href="" class="wwvergeten">Wachtwoord vergeten?</a>
 
-                <label for="nummer">Huis nummer</label>
-                <input type="number" id="nummer">
-                <br/>
+                </div>
+            </form>
+        </section>
+    </main>
 
-                <label for="postcode">Postcode</label>
-                <input type="text" id="postcode" pattern="[0-9]{4}" placeholder="4 nummers" />
-                <input type="text" pattern="[A-Z]{2}" placeholder="2 letters" />
-                <br/>
-
-                <label for="land">Land</label>
-                <input type="text" id="land">
-                <br/>
-
-                <label for="telefoon">Telefoon</label>
-                <input type="tel" id="telefoon">
-                <br/>
-
-            </fieldset>
-
-            <input type="submit" value="Submit" />
-
-        </form>
-    </section>
 </body>
 
 </html>

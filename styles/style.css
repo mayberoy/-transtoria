@@ -1,143 +1,325 @@
-        @font-face {
-            font-family: 'Segoe-UI-SemiBold';
-            src: url('fonts/segoe-ui-semibold.eot');
-            src: url('fonts/segoe-ui-semibold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-semibold.woff') format('woff'), url('fonts/segoe-ui-semibold.ttf') format('truetype'), url('fonts/segoe-ui-semibold.svg#Segoe-UI-SemiBold') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
+@font-face {
+    font-family: 'Segoe-UI-SemiBold';
+    src: url('fonts/segoe-ui-semibold.eot');
+    src: url('fonts/segoe-ui-semibold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-semibold.woff') format('woff'), url('fonts/segoe-ui-semibold.ttf') format('truetype'), url('fonts/segoe-ui-semibold.svg#Segoe-UI-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        @font-face {
-            font-family: 'Segoe-UI';
-            src: url('fonts/segoe-ui.eot');
-            src: url('fonts/segoe-ui.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui.woff') format('woff'), url('fonts/segoe-ui.ttf') format('truetype'), url('fonts/segoe-ui.svg#Segoe-UI') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
+@font-face {
+    font-family: 'Segoe-UI';
+    src: url('fonts/segoe-ui.eot');
+    src: url('fonts/segoe-ui.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui.woff') format('woff'), url('fonts/segoe-ui.ttf') format('truetype'), url('fonts/segoe-ui.svg#Segoe-UI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        @font-face {
-            font-family: 'Segoe-UI-Bold';
-            src: url('fonts/segoe-ui-bold.eot');
-            src: url('fonts/segoe-ui-bold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-bold.woff') format('woff'), url('fonts/segoe-ui-bold.ttf') format('truetype'), url('fonts/segoe-ui-bold.svg#Segoe-UI-Bold') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
+@font-face {
+    font-family: 'Segoe-UI-Bold';
+    src: url('fonts/segoe-ui-bold.eot');
+    src: url('fonts/segoe-ui-bold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-bold.woff') format('woff'), url('fonts/segoe-ui-bold.ttf') format('truetype'), url('fonts/segoe-ui-bold.svg#Segoe-UI-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        @font-face {
-            font-family: 'dfds-bold';
-        }
+@font-face {
+    font-family: 'dfds-bold';
+    src: url('fonts/dfds-bold.ttf');
+}
 
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        body {
-            background-color: RGBA(234, 237, 238, 1.00)
-        }
+body {
+    background-color: RGBA(234, 237, 238, 1.00);
+    margin: 0;
+}
 
-        header {
-            width: 100%;
-            background: white;
-            display: flex;
-        }
+header {
+    width: 100%;
+    margin: 0;
+    height: 3em;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        h1 {
-            font-family: "dfds-bold";
-            font-size: 2em;
-        }
+.logo {
+    height: 4.2em;
+    margin-left: .5em;
+}
 
-        h2 {
-            font-family: "dfds-bold";
-            font-size: 1.2em;
-        }
+h1 {
+    font-family: "dfds-bold";
+    font-size: 1.5em;
+    text-align: center;
+    color: #005184;
+}
 
-        h3 {
-            font-size: 1.2em;
-        }
+h2 {
+    font-family: "dfds-bold";
+    font-size: 1.2em;
+    border-bottom: solid 1px #005184;
+    width: 100%;
+    padding: .5em;
+    padding-left: 1em;
+    color: #005184;
+    margin: 0;
+}
 
-        h4 {
-            font-family: "dfds-bold";
-            font-size: 1.1em;
-        }
+h3 {
+    font-size: 1.2em;
+}
 
-        p {
-            font-family: "SegoeUi";
-            font-size: 1em;
-        }
+h4 {
+    font-family: "dfds-bold";
+    font-size: 1.1em;
+    color: white;
+    margin: 0;
+    margin-top: 1em;
+    padding: 2em;
+}
 
-        article {
-            background: white;
-            box-shadow: 0em 0.1em .01em grey;
-            padding: 0em;
-            margin: .2em
-        }
+p {
+    font-family: "SegoeUi";
+    font-size: 1em;
+    padding-left: 1em;
+    width: 50%;
+}
 
-        a {
-            text-decoration: none;
-            color: #005184;
-        }
+article {
+    background: white;
+    box-shadow: 0em 0.1em .01em grey;
+    padding: 0em;
+    margin: .7em
+}
 
-        article > h2 {
-            border-bottom: solid 1px #005184;
-            width: 100%;
-            padding: .5em;
-            color: #005184;
-        }
+article:hover {
+    color: #005184
+}
 
-        p + footer {
-            background-color: #68BD45;
-            padding: 0.4em;
-            font-family: "SegoeUi";
-            font-weight: 700;
-            color: white;
-            height: 10em;
-            width: 5em;
-            padding: 1em;
-            position: inherit;
-        }
+a {
+    text-decoration: none;
+    color: #005184;
+}
 
-        header > h1 {
-            margin: auto;
-        }
+.contentarticle {
+    display: flex;
+}
 
-        .flex-container {
-            width: 100%;
-            display: flex;
-            overflow: scroll;
-        }
+footer {
+    text-align: center;
+}
 
-        .verderlezen {
-            width: 33%;
-            min-width: 375px;
-        }
+.bottom {
+    background-color: #005184;
+}
 
-        .mainstories {
-            max-width: 800px;
-            margin: auto;
-            margin-bottom: 1em;
-        }
+.actions {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUi";
+    font-weight: 700;
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-        @media screen and (max-width: 480px) {
-            body {}
-        }
+.actions2 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUi";
+    font-weight: 700;
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-        .views {
-            width: 3em;
-        }
+.actions3 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUi";
+    font-weight: 700;
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-        .comment {
-            width: 2.3em;
-        }
+.sorteren {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: "SegoeUi";
+    color: #005184;
+    padding: 1em;
+    border-top: solid 1px #005184;
+    border-bottom: solid 1px #005184;
+    width: 23.6em;
+    margin: auto;
+    border-width: 100%;
+    margin-bottom: 1em;
+}
 
-        .likes {
-            width: 2.3em;
-        }
+a:hover {
+    color: #F6861F
+}
 
-        .search {
-            height: 3em;
-            margin-left: 1em;
-        }
+.activelink a {
+    color: #F6861F;
+}
 
-        .login {
-            height: 3em;
-            margin-left: 1em;
-        }
+.flex-container {
+    display: flex;
+    overflow: scroll;
+}
+
+.verderlezen {
+    width: 33%;
+    min-width: 375px;
+}
+
+.views {
+    width: 2.7em;
+}
+
+.comment {
+    width: 2.3em;
+}
+
+.likes {
+    width: 2.3em;
+}
+
+.login {
+    height: 3.3em;
+    padding: 1em;
+    border-left: solid 1px #00253C;
+}
+
+@media screen and (max-width: 699px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainstories {
+        max-width: 27em;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1010px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mainstories {
+        min-width: 23.6em;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1011px) and (max-width: 1500px) {
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mainstories {
+        min-width: 23.6em;
+        width: 33.33333%;
+    }
+}
+
+
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .mainstories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 25%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .mainstories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 20%;
+    }
+}
+.loginpage {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    margin: auto;
+}
+.loginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.aanmeldform {
+    font-family: "SegoeUi";
+    color: #005184;
+    font-size: .8em;
+    padding: 1em;
+    padding-left: 0;
+}
+.loginbtn {
+    background-color: #F6861F;
+    box-shadow: .1em .1em .1em 0em grey;
+    border: none;
+    color: white;
+    font-family: "SegoeUi";
+    text-align: center;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1em;
+    padding: .5em 2em;
+    width: 50%;
+}
+.ww {
+    padding: 1.2em;
+    border: none;
+}
+.username {
+    padding: 1.2em;
+    border: none;
+}
+.wwvergeten {
+    font-family: "SegoeUi";
+    font-size: .7em;
+    text-align: center;
+}
+.buttonenww {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
