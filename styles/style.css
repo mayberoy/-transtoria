@@ -1,30 +1,28 @@
 @font-face {
-    font-family: 'Segoe-UI-SemiBold';
-    src: url('fonts/segoe-ui-semibold.eot');
-    src: url('fonts/segoe-ui-semibold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-semibold.woff') format('woff'), url('fonts/segoe-ui-semibold.ttf') format('truetype'), url('fonts/segoe-ui-semibold.svg#Segoe-UI-SemiBold') format('svg');
+    font-family: 'SegoeUISemiBold';
+    src: url('../fonts/segoe-ui-semibold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Segoe-UI';
-    src: url('fonts/segoe-ui.eot');
-    src: url('fonts/segoe-ui.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui.woff') format('woff'), url('fonts/segoe-ui.ttf') format('truetype'), url('fonts/segoe-ui.svg#Segoe-UI') format('svg');
+    font-family: 'SegoeUI';
+    src: url('../fonts/segoe-ui.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Segoe-UI-Bold';
-    src: url('fonts/segoe-ui-bold.eot');
-    src: url('fonts/segoe-ui-bold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe-ui-bold.woff') format('woff'), url('fonts/segoe-ui-bold.ttf') format('truetype'), url('fonts/segoe-ui-bold.svg#Segoe-UI-Bold') format('svg');
+    font-family: 'SegoeUIBold';
+    src: url('../fonts/segoe-ui-bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'dfds-bold';
-    src: url('fonts/dfds-bold.ttf');
+    src: url('../fonts/dfds-bold.ttf');
+    font-weight: 700;
 }
 
 * {
@@ -38,17 +36,26 @@ body {
 
 header {
     width: 100%;
-    margin: 0;
-    height: 3em;
+    height: 3.4em;
     background: white;
+    padding: 0;
+}
+
+header ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    align-items: flex-start;
+    margin: 0;
+    padding-left: .8em;
+}
+
+header ul >:first-child {
+    margin-right: auto;
 }
 
 .logo {
-    height: 4.2em;
-    margin-left: .5em;
+    height: 3.4em;
 }
 
 h1 {
@@ -75,29 +82,51 @@ h3 {
 
 h4 {
     font-family: "dfds-bold";
-    font-size: 1.1em;
+    font-size: 1em;
     color: white;
     margin: 0;
     margin-top: 1em;
-    padding: 2em;
+    padding: 3em;
+}
+
+.gradient {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 10.5em;
+    padding: 0;
+    margin: 0;
 }
 
 p {
     font-family: "SegoeUi";
     font-size: 1em;
+    padding-top: .5em;
     padding-left: 1em;
-    width: 50%;
+    margin: 0;
+    width: 100%;
+    height: 10.5em;
+    overflow: hidden;
+}
+
+article > div .gradient {
+    position: relative;
+}
+
+article > div .gradient .fadeout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 33%, #FFFFFF 100%);
 }
 
 article {
     background: white;
     box-shadow: 0em 0.1em .01em grey;
     padding: 0em;
-    margin: .7em
-}
-
-article:hover {
-    color: #005184
+    margin: .7em;
 }
 
 a {
@@ -120,8 +149,7 @@ footer {
 .actions {
     background-color: transparent;
     padding: 1em;
-    font-family: "SegoeUi";
-    font-weight: 700;
+    font-family: "SegoeUiBold";
     color: white;
     width: 50%;
     height: 11.5em;
@@ -137,8 +165,7 @@ footer {
 .actions2 {
     background-color: transparent;
     padding: 1em;
-    font-family: "SegoeUi";
-    font-weight: 700;
+    font-family: "SegoeUiBold";
     color: white;
     width: 50%;
     height: 11.5em;
@@ -154,8 +181,7 @@ footer {
 .actions3 {
     background-color: transparent;
     padding: 1em;
-    font-family: "SegoeUi";
-    font-weight: 700;
+    font-family: "SegoeUiBold";
     color: white;
     width: 50%;
     height: 11.5em;
@@ -163,6 +189,102 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     background-image: url("../img/bannerright3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.actions4 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUiBold";
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.actions5 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUiBold";
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.actions6 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUiBold";
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.actions7 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUiBold";
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright7.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.actions8 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUiBold";
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.actions9 {
+    background-color: transparent;
+    padding: 1em;
+    font-family: "SegoeUiBold";
+    color: white;
+    width: 50%;
+    height: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/bannerright9.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -214,7 +336,7 @@ a:hover {
 }
 
 .login {
-    height: 3.3em;
+    height: 3.4em;
     padding: 1em;
     border-left: solid 1px #00253C;
 }
@@ -255,35 +377,43 @@ a:hover {
     }
 }
 
-
-}
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
-    .mainstories {
+    .main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .mainstories {
+        min-width: 23.6em;
         width: 25%;
     }
 }
+
 @media screen and (min-width: 2000px) {
-    .mainstories {
+    .main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .mainstories {
+        min-width: 23.6em;
         width: 20%;
     }
 }
+
 .loginpage {
     display: flex;
     flex-direction: column;
     width: 20em;
     margin: auto;
 }
+
 .loginform {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .aanmeldform {
     font-family: "SegoeUi";
     color: #005184;
@@ -291,6 +421,7 @@ a:hover {
     padding: 1em;
     padding-left: 0;
 }
+
 .loginbtn {
     background-color: #F6861F;
     box-shadow: .1em .1em .1em 0em grey;
@@ -304,22 +435,40 @@ a:hover {
     padding: .5em 2em;
     width: 50%;
 }
+
 .ww {
     padding: 1.2em;
     border: none;
 }
+
 .username {
     padding: 1.2em;
     border: none;
 }
+
 .wwvergeten {
     font-family: "SegoeUi";
     font-size: .7em;
     text-align: center;
 }
+
 .buttonenww {
     margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-between
+}
+
+#search {
+    border: none;
+    background-color: #EAEDEE;
+    padding: .5em;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #F6861F;
+    padding: .5em;
+    box-shadow: .1em .1em .1em 0em grey;
 }
