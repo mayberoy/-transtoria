@@ -68,16 +68,19 @@ h1 {
 h2 {
     font-family: "dfds-bold";
     font-size: 1.2em;
-    border-bottom: solid 1px #005184;
+    border-bottom: solid 0.063em #005184;
     width: 100%;
     padding: .5em;
-    padding-left: 1em;
+    padding-left: .8em;
     color: #005184;
     margin: 0;
 }
 
 h3 {
     font-size: 1.2em;
+    font-family: "dfds-bold";
+    text-align: center;
+    color: #005184;
 }
 
 h4 {
@@ -122,11 +125,41 @@ article > div .gradient .fadeout {
     background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 33%, #FFFFFF 100%);
 }
 
+
+/*Hulp gehad van Jelle met de gradient*/
+
+section {
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+section > h1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/bloemetjes.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 13em;
+    width: 95%;
+    text-align: left;
+    font-size: 2em;
+    color: white;
+    padding: 1em;
+    margin: .8em auto;
+}
+
 article {
     background: white;
-    box-shadow: 0em 0.1em .01em grey;
-    padding: 0em;
+    box-shadow: .04em .05em .01em .02em grey;
     margin: .7em;
+    width: 50%;
+    min-width: 23.6em;
+    transition: all .2s ease;
+}
+
+article:hover {
+    transform: scale(1.01)
 }
 
 a {
@@ -134,20 +167,19 @@ a {
     color: #005184;
 }
 
-.contentarticle {
+h2 + div {
     display: flex;
 }
 
-footer {
+footer > div {
+    height: 15em;
+    display: flex;
     text-align: center;
-}
-
-.bottom {
-    background-color: #005184;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .actions {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -163,7 +195,6 @@ footer {
 }
 
 .actions2 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -179,7 +210,6 @@ footer {
 }
 
 .actions3 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -195,7 +225,6 @@ footer {
 }
 
 .actions4 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -211,7 +240,6 @@ footer {
 }
 
 .actions5 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -227,7 +255,6 @@ footer {
 }
 
 .actions6 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -243,7 +270,6 @@ footer {
 }
 
 .actions7 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -259,7 +285,6 @@ footer {
 }
 
 .actions8 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -275,7 +300,6 @@ footer {
 }
 
 .actions9 {
-    background-color: transparent;
     padding: 1em;
     font-family: "SegoeUiBold";
     color: white;
@@ -297,8 +321,8 @@ footer {
     font-family: "SegoeUi";
     color: #005184;
     padding: 1em;
-    border-top: solid 1px #005184;
-    border-bottom: solid 1px #005184;
+    border-top: solid 0.063em #005184;
+    border-bottom: solid 0.063em #005184;
     width: 23.6em;
     margin: auto;
     border-width: 100%;
@@ -306,6 +330,7 @@ footer {
 }
 
 a:hover {
+    transition: all .2s ease-out;
     color: #F6861F
 }
 
@@ -313,89 +338,99 @@ a:hover {
     color: #F6861F;
 }
 
-.flex-container {
+section:first-child {
     display: flex;
-    overflow: scroll;
 }
 
-.verderlezen {
-    width: 33%;
-    min-width: 375px;
+svg {
+    min-height: 1em;
+    max-height: 1.5em;
+    min-width: 2.5em;
+    max-width: 3em;
 }
 
-.views {
-    width: 2.7em;
+svg path {
+    transition: fill .2s ease-out;
 }
 
-.comment {
-    width: 2.3em;
-}
-
-.likes {
-    width: 2.3em;
+svg:hover path {
+    fill: #005184;
 }
 
 .login {
     height: 3.4em;
     padding: 1em;
-    border-left: solid 1px #00253C;
+    border-left: solid 0.063em #00253C;
 }
 
-@media screen and (max-width: 699px) {
-    .main {
+.login:hover {
+    transition: all .5s ease-out;
+    background-color: #EAEDEE
+}
+
+@media screen and (max-width: 43.688em) {
+    .artiekelen {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .mainstories {
-        max-width: 27em;
+    article {
+        min-width: 23.6em;
+        width: 60%;
+    }
+    section > h1 {
+        color: #00253C;
+        font-size: 1.5em;
+        width: 100%;
+        margin: 0;
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1010px) {
-    .main {
+@media screen and (min-width: 43.689em) and (max-width: 63.125em) {
+    .artiekelen {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
     }
-    .mainstories {
+    article {
         min-width: 23.6em;
         width: 50%;
     }
 }
 
-@media screen and (min-width: 1011px) and (max-width: 1500px) {
-    .main {
+@media screen and (min-width: 63.127em) and (max-width: 93.750em) {
+    .artiekelen {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .mainstories {
+    article {
         min-width: 23.6em;
-        width: 33.33333%;
+        width: 33%;
     }
 }
 
-@media screen and (min-width: 1500px) and (max-width: 2000px) {
-    .main {
+@media screen and (min-width: 93.751em) and (max-width: 125.000em) {
+    .artiekelen {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .mainstories {
+    article {
         min-width: 23.6em;
         width: 25%;
     }
 }
 
-@media screen and (min-width: 2000px) {
-    .main {
+@media screen and (min-width: 125.001em) {
+    .artiekelen {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .mainstories {
+    article {
         min-width: 23.6em;
         width: 20%;
     }
@@ -423,7 +458,7 @@ a:hover {
 }
 
 .loginbtn {
-    background-color: #F6861F;
+    background-color: #F69000;
     box-shadow: .1em .1em .1em 0em grey;
     border: none;
     color: white;
@@ -434,6 +469,11 @@ a:hover {
     font-size: 1em;
     padding: .5em 2em;
     width: 50%;
+}
+
+.loginbtn:hover {
+    transition: background .5s ease-out;
+    background-color: #F6861F;
 }
 
 .ww {
@@ -463,12 +503,4 @@ a:hover {
     border: none;
     background-color: #EAEDEE;
     padding: .5em;
-}
-
-button {
-    border: none;
-    color: white;
-    background-color: #F6861F;
-    padding: .5em;
-    box-shadow: .1em .1em .1em 0em grey;
 }
