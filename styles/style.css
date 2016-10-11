@@ -79,7 +79,6 @@ h2 {
 h3 {
     font-size: 1.2em;
     font-family: "dfds-bold";
-    text-align: center;
     color: #005184;
 }
 
@@ -141,12 +140,12 @@ section > h1 {
     background-size: cover;
     background-position: center;
     height: 13em;
-    width: 95%;
+    width: 100%;
     text-align: left;
     font-size: 2em;
     color: white;
     padding: 1em;
-    margin: .8em auto;
+    margin: 0;
 }
 
 article {
@@ -291,7 +290,7 @@ svg:hover path {
     }
     article {
         min-width: 23.6em;
-        width: 50%;
+        width: 40%;
     }
 }
 
@@ -303,7 +302,7 @@ svg:hover path {
     }
     article {
         min-width: 23.6em;
-        width: 33%;
+        width: 30%;
     }
 }
 
@@ -312,6 +311,7 @@ svg:hover path {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 95%;
     }
     article {
         min-width: 23.6em;
@@ -334,14 +334,16 @@ svg:hover path {
 .loginpage {
     display: flex;
     flex-direction: column;
-    width: 20em;
-    margin: auto;
+    width: 22em;
+    margin: 0 auto;
 }
 
-.loginform {
+fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: none;
+    padding: 0;
 }
 
 .aanmeldform {
@@ -352,9 +354,27 @@ svg:hover path {
     padding-left: 0;
 }
 
+form {
+    margin: 0;
+}
+
+input {
+    padding: 1.2em;
+    border: none;
+    width: 100%;
+}
+
+input:focus {
+    outline: solid 2px #F69000;
+}
+
+.username:valid {
+    outline: solid 2px #68BD45;
+}
+
 .loginbtn {
     background-color: #F69000;
-    box-shadow: .1em .1em .1em 0em grey;
+    box-shadow: .1em .1em .1em 0em rgba(0, 0, 0, 0.3);
     border: none;
     color: white;
     font-family: "SegoeUi";
@@ -366,19 +386,14 @@ svg:hover path {
     width: 50%;
 }
 
+legend {
+    display: none;
+}
+
 .loginbtn:hover {
     transition: background .5s ease-out;
     background-color: #F6861F;
-}
-
-.ww {
-    padding: 1.2em;
-    border: none;
-}
-
-.username {
-    padding: 1.2em;
-    border: none;
+    transform: scale(1.02);
 }
 
 .wwvergeten {
@@ -388,7 +403,7 @@ svg:hover path {
 }
 
 .buttonenww {
-    margin-top: 2em;
+    margin-top: 2.2em;
     display: flex;
     align-items: center;
     justify-content: space-between
@@ -400,23 +415,23 @@ svg:hover path {
     padding: .5em;
 }
 
-
-/*Droom*/
-
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+.loginregister {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
 }
 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
+.register {
+    background-color: #F69000;
+    box-shadow: .1em .1em .1em 0em rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    font-family: "SegoeUi";
+    text-align: center;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1em;
+    padding: .5em 2em;
+    margin-top: 2.2em;
     width: 100%;
-    height: 100%;
 }
