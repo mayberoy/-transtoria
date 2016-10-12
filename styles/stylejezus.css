@@ -49,8 +49,7 @@ header ul >:first-child {
 section {
     margin-top: 5em;
     display: flex;
-    align-items: center;
-    height: 90vh;
+    align-items: baseline;
 }
 
 article {
@@ -68,9 +67,37 @@ p {
     line-height: 1.4em;
 }
 
+@media screen and (max-width: 43.688em) {
+    article {
+        min-width: 20em;
+    }
+}
+
 body {
-    background-image: url(../img/Pelgrimstocht1.png);
+    background-image: url(../img/Jezus/background.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background-size: 3000px 100vh;
+}
+
+.sand {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3000px;
+    height: 80%;
+}
+
+.pelgrim {
+    height: 300px;
+    position: fixed;
+    bottom: 0;
+    left: 10em;
+    opacity: 50%;
+}
+
+.sonny {
+    height: 400px;
+    position: fixed;
+    left: -5em;
+    top: -10em;
 }
