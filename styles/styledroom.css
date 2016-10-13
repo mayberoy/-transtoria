@@ -46,6 +46,40 @@ header ul >:first-child {
     background-color: #EAEDEE;
 }
 
+input {
+    padding: 1.2em;
+    border: none;
+    width: 100%;
+}
+
+#zoeken {
+    font-size: 1em;
+    height: 3.4em;
+    width: 0;
+    padding: 0;
+    transition: all .1s ease-in;
+}
+
+#zoeken:focus {
+    width: 10em;
+    outline: none;
+}
+
+.zoeken {
+    display: flex;
+    flex-direction: row;
+    height: 3.4em;
+}
+
+.zoekicon {
+    height: 3.4em;
+    padding: 1em;
+    border-left: solid 0.063em #00253C;
+}
+
+
+/* bovenstaande styles gelden voor de header*/
+
 .fullscreen-bg {
     position: fixed;
     top: 0;

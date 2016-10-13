@@ -258,77 +258,8 @@ svg:hover path {
 }
 
 .login:hover {
-    transition: all .5s ease-out;
+    transition: all .5s ease-in-out;
     background-color: #EAEDEE
-}
-
-@media screen and (max-width: 43.688em) {
-    .artiekelen {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    article {
-        min-width: 23.6em;
-        width: 60%;
-    }
-    section > h1 {
-        color: #00253C;
-        font-size: 1.5em;
-        width: 100%;
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 43.689em) and (max-width: 63.125em) {
-    .artiekelen {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    article {
-        min-width: 23.6em;
-        width: 40%;
-    }
-}
-
-@media screen and (min-width: 63.127em) and (max-width: 93.750em) {
-    .artiekelen {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    article {
-        min-width: 23.6em;
-        width: 30%;
-    }
-}
-
-@media screen and (min-width: 93.751em) and (max-width: 125.000em) {
-    .artiekelen {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 95%;
-    }
-    article {
-        min-width: 23.6em;
-        width: 25%;
-    }
-}
-
-@media screen and (min-width: 125.001em) {
-    .artiekelen {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    article {
-        min-width: 23.6em;
-        width: 20%;
-    }
 }
 
 .loginpage {
@@ -409,10 +340,29 @@ legend {
     justify-content: space-between
 }
 
-#search {
-    border: none;
-    background-color: #EAEDEE;
-    padding: .5em;
+#zoeken {
+    font-size: 1em;
+    height: 3.4em;
+    width: 0;
+    padding: 0;
+    transition: all .1s ease-in;
+}
+
+#zoeken:focus {
+    width: 10em;
+    outline: none;
+}
+
+.zoeken {
+    display: flex;
+    flex-direction: row;
+    height: 3.4em;
+}
+
+.zoekicon {
+    height: 3.4em;
+    padding: 1em;
+    border-left: solid 0.063em #00253C;
 }
 
 .loginregister {
@@ -434,4 +384,79 @@ legend {
     padding: .5em 2em;
     margin-top: 2.2em;
     width: 100%;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 43.688em) {
+    .artiekelen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+        min-width: 23.6em;
+        width: 60%;
+    }
+    section > h1 {
+        color: #00253C;
+        font-size: 1.5em;
+        width: 100%;
+        margin: 0;
+    }
+    #zoeken:focus {
+        width: 6.5em;
+    }
+}
+
+@media screen and (min-width: 43.689em) and (max-width: 63.125em) {
+    .artiekelen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    article {
+        min-width: 23.6em;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 63.127em) and (max-width: 93.750em) {
+    .artiekelen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        min-width: 23.6em;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 93.751em) and (max-width: 125.000em) {
+    .artiekelen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+    }
+    article {
+        min-width: 23.6em;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 125.001em) {
+    .artiekelen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        min-width: 23.6em;
+        width: 20%;
+    }
 }
