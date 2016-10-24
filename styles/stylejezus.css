@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'LithosPro-Black';
+    src: url('../fonts/LithosPro-Black.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LithosPro-Regular';
+    src: url('../fonts/LithosPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -77,6 +91,12 @@ input {
     border-left: solid 0.063em #00253C;
 }
 
+@media screen and (max-width: 43.688em) {
+    #zoeken:focus {
+        width: 6.5em;
+    }
+}
+
 
 /* bovenstaande styles gelden voor de header*/
 
@@ -92,11 +112,11 @@ article {
 }
 
 h1 {
-    font-family: 'Lithos Pro'
+    font-family: "LithosPro-Black";
 }
 
 p {
-    font-family: "Lithos Pro";
+    font-family: "LithosPro-Regular";
     margin: auto;
     line-height: 1.4em;
 }

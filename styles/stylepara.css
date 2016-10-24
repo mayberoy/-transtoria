@@ -77,25 +77,43 @@ input {
     border-left: solid 0.063em #00253C;
 }
 
+@media screen and (max-width: 43.688em) {
+    #zoeken:focus {
+        width: 6.5em;
+    }
+}
+
 
 /* bovenstaande styles gelden voor de header*/
 
 body {
-    background-color: #000;
+    background-color: #A2DED0;
+    transition: all 2s ease;
+    background-image: url(../img/Waan3.png)
+}
+
+body:hover {
+    background-color: #A2C0D2;
 }
 
 section {
     margin-top: 5em;
 }
 
+h1 {
+    font-size: 4em;
+    font-family: 'Schoolbell', cursive;
+    text-align: center;
+}
+
 p {
     color: black;
-    font-family: "Circular";
-    font-size: 1.2em;
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.4em;
     line-height: 1.4em;
     transition: all 0.0001s ease;
     width: 70%;
-    max-width: 30em;
+    max-width: 35em;
     margin: 1em auto;
 }
 

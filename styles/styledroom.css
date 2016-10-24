@@ -77,6 +77,12 @@ input {
     border-left: solid 0.063em #00253C;
 }
 
+@media screen and (max-width: 43.688em) {
+    #zoeken:focus {
+        width: 6.5em;
+    }
+}
+
 
 /* bovenstaande styles gelden voor de header*/
 

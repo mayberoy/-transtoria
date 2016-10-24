@@ -229,6 +229,7 @@ a:hover {
 }
 
 .activelink a {
+    font-weight: 900;
     color: #F6861F;
 }
 
@@ -244,7 +245,7 @@ svg {
 }
 
 svg path {
-    transition: fill .2s ease-out;
+    transition: fill .1s ease-out;
 }
 
 svg:hover path {
