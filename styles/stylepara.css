@@ -3,7 +3,7 @@
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -87,36 +87,151 @@ input {
 /* bovenstaande styles gelden voor de header*/
 
 body {
-    background-color: #A2DED0;
-    transition: all 2s ease;
-    background-image: url(../img/Waan3.png)
+    background: #740207;
+    animation: backgr 30s;
+    -moz-animation: backgr 30s infinite;
+    /* Firefox */
+    -webkit-animation: backgr 30s infinite;
+    /* Safari and Chrome */
 }
 
-body:hover {
-    background-color: #A2C0D2;
+@-moz-keyframes backgr
+/* Firefox */
+
+{
+    0% {
+        background: #740207;
+    }
+    50% {
+        background: #000;
+    }
+    100% {
+        background: #740207;
+    }
 }
 
-section {
-    margin-top: 5em;
+@-webkit-keyframes backgr
+/* Safari and Chrome */
+
+{
+    0% {
+        background: #740207;
+    }
+    50% {
+        background: #000;
+    }
+    100% {
+        background: #740207;
+    }
 }
 
 h1 {
     font-size: 4em;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Shadows Into Light', cursive;
     text-align: center;
+    animation: wak 30s;
+    -moz-animation: wak 30s infinite;
+    /* Firefox */
+    -webkit-animation: wak 30s infinite;
+    /* Safari and Chrome */
 }
 
 p {
-    color: black;
-    font-family: 'Schoolbell', cursive;
-    font-size: 1.4em;
-    line-height: 1.4em;
-    transition: all 0.0001s ease;
-    width: 70%;
-    max-width: 35em;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    width: 60%;
+    max-width: 30em;
     margin: 1em auto;
+    animation: wak 30s;
+    -moz-animation: wak 30s infinite;
+    /* Firefox */
+    -webkit-animation: wak 30s infinite;
+    /* Safari and Chrome */
+}
+
+@-moz-keyframes wak
+/* Firefox */
+
+{
+    0% {
+        background: #000;
+    }
+    50% {
+        background: #fff;
+    }
+    100% {
+        background: #000;
+    }
+}
+
+@-webkit-keyframes wak
+/* Safari and Chrome */
+
+{
+    0% {
+        color: #000;
+    }
+    50% {
+        color: #BE3A31;
+    }
+    100% {
+        color: #000;
+    }
 }
 
 p:hover {
     color: white;
+}
+
+.crazyeyes img {
+    width: 100%;
+}
+
+.crazyeyes {
+    position: fixed;
+    top: 3.4em;
+    animation: eyes 30s;
+    -moz-animation: eyes 30s infinite;
+    -webkit-animation: eyes 30s infinite;
+}
+
+@-moz-keyframes eyes
+/* Firefox */
+
+{
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes eyes
+/* Safari and Chrome */
+
+{
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0;
+    }
 }

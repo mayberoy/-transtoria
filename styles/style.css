@@ -150,7 +150,6 @@ section > h1 {
 
 article {
     background: white;
-    box-shadow: .04em .05em .01em .02em grey;
     margin: .7em;
     width: 50%;
     min-width: 23.6em;
@@ -351,6 +350,7 @@ legend {
 
 #zoeken:focus {
     width: 10em;
+    padding: 0.5em;
     outline: none;
 }
 
