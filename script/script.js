@@ -1,4 +1,7 @@
-function leaveLike() {
-    var svgElement = document.getElementById('likes');
-    svgElement.style.fill = '#DB9A33';
+function toggleClass(element, className) {
+    document.querySelector(element).addEventListener('click', function () {
+        this.classList.toggle(className);
+    })
 }
+
+toggleClass('.fa-heart', 'likeskleur');

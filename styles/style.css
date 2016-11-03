@@ -251,6 +251,40 @@ svg:hover path {
     fill: #005184;
 }
 
+.fa-heart {
+    font-size: 1.7em!important;
+}
+
+.fa-heart:hover {
+    color: #005184;
+}
+
+.likeskleur {
+    color: #DB9A33!important;
+    animation: jiggle .3s ease-out;
+}
+
+@keyframes jiggle {
+    15%,
+    40%,
+    75%,
+    100% {
+        transform-origin: center center;
+    }
+    15% {
+        transform: scale(1.4, 1.2);
+    }
+    40% {
+        transform: scale(0.9, 0.9);
+    }
+    75% {
+        transform: scale(1.08, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
 .login {
     height: 3.4em;
     padding: 1em;
