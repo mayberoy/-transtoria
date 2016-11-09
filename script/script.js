@@ -1,7 +1,6 @@
-function toggleClass(element, className) {
-    document.querySelector(element).addEventListener('click', function () {
-        this.classList.toggle(className);
+var hearts = document.querySelectorAll('.fa-heart');
+for (i = 0; i < hearts.length; i++) {
+    hearts[i].addEventListener('click', function () {
+        this.classList.toggle('likeskleur');
     })
 }
-
-toggleClass('.fa-heart', 'likeskleur');

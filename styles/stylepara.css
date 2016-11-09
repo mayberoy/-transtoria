@@ -235,3 +235,7 @@ p:hover {
         opacity: 0;
     }
 }
+
+a {
+    color: crimson
+}

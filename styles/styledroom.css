@@ -126,6 +126,34 @@ h1 {
     font-family: 'Indie Flower', cursive;
 }
 
+i {
+    animation: droom 40s ease-in-out infinite;
+}
+
+@-webkit-keyframes droom {
+    0% {
+        transform: scale(1.2);
+        color: #082593;
+    }
+    10% {
+        color: #157CBB;
+    }
+    30% {
+        transform: scale(1);
+        color: #5C93BD;
+    }
+    60% {
+        color: #0A2FA0;
+    }
+    80 {
+        color: #0A2FA0;
+    }
+    100% {
+        transform: scale(1.2);
+        color: #082593;
+    }
+}
+
 p {
     color: white;
     font-family: 'Indie Flower', cursive;
